@@ -13,8 +13,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mineria - NewCooltura Informada",
+  title: "Mineria Chile - SERNAGEOMIN | NewCooltura Informada",
   description: "Oficinas SERNAGEOMIN, concesiones mineras, calculadora de patentes y recursos para mineros",
+  keywords: ["mineria Chile", "SERNAGEOMIN", "concesiones mineras", "patentes mineras", "exploracion"],
+  openGraph: {
+    title: "Mineria Chile - NewCooltura Informada",
+    description: "Concesiones, patentes y tramites mineros",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -23,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
